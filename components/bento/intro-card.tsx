@@ -12,21 +12,21 @@ export function IntroCard() {
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-500/30 to-cyan-500/30">
               <Sparkles className="h-4 w-4 text-cyan-400" />
             </div>
-            <span className="text-sm text-muted-foreground">Developer & Designer</span>
+            <span className="text-sm text-muted-foreground">Graphic Designer</span>
           </div>
           
           <h1 className="mb-2 text-3xl font-bold text-foreground md:text-4xl text-balance">
-            Hi, I&apos;m <span className="bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">Your Name</span>
+            Hi, I&apos;m <span className="bg-gradient-to-r from-indigo-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">Bill</span>
           </h1>
           
           <p className="text-muted-foreground leading-relaxed">
-            I craft beautiful digital experiences with clean code and thoughtful design. 
-            Passionate about building products that make a difference.
+            I craft beautiful visual experiences through thoughtful design. 
+            Passionate about creating work that stands out and makes an impact.
           </p>
         </div>
 
         <div className="mt-6 flex flex-wrap gap-2">
-          {["React", "TypeScript", "Next.js", "Node.js", "Tailwind"].map((skill) => (
+          {["Photoshop", "Illustrator", "Figma", "After Effects", "Branding"].map((skill) => (
             <span 
               key={skill}
               className="rounded-full border border-zinc-700 bg-zinc-800/50 px-3 py-1 text-xs text-zinc-300"

@@ -146,7 +146,7 @@ export function DiscordCard() {
             </div>
             <div>
               <p className="text-sm font-medium text-foreground">No current activity</p>
-              <p className="text-xs text-muted-foreground">Chilling</p>
+              <p className="text-xs text-muted-foreground">Probably designing something cool</p>
             </div>
           </div>
         )}

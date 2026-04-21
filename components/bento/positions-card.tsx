@@ -1,23 +1,12 @@
-import { Building2 } from "lucide-react"
+import { Building2, ExternalLink } from "lucide-react"
 
 const positions = [
   {
-    role: "Senior Developer",
-    company: "Tech Company",
-    period: "2023 - Present",
+    role: "Junior Designer",
+    company: "Arifity",
+    period: "2026 - Present",
     current: true,
-  },
-  {
-    role: "Full Stack Developer",
-    company: "Startup Inc",
-    period: "2021 - 2023",
-    current: false,
-  },
-  {
-    role: "Junior Developer",
-    company: "Agency Co",
-    period: "2019 - 2021",
-    current: false,
+    href: "https://arifity.com",
   },
 ]
 
@@ -48,7 +37,19 @@ export function PositionsCard() {
               </div>
               <div className="flex-1 -mt-0.5">
                 <p className="text-sm font-medium text-foreground">{position.role}</p>
-                <p className="text-sm text-muted-foreground">{position.company}</p>
+                {position.href ? (
+                  <a 
+                    href={position.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-sm text-blue-400 hover:text-blue-300 transition-colors"
+                  >
+                    {position.company}
+                    <ExternalLink className="h-3 w-3" />
+                  </a>
+                ) : (
+                  <p className="text-sm text-muted-foreground">{position.company}</p>
+                )}
                 <p className="text-xs text-zinc-500">{position.period}</p>
               </div>
               {position.current && (
