@@ -4,10 +4,12 @@ import { AvailabilityCard } from "@/components/bento/availability-card"
 import { PositionsCard } from "@/components/bento/positions-card"
 import { SocialsCard } from "@/components/bento/socials-card"
 import { PortfolioCard } from "@/components/bento/portfolio-card"
+import { LogoRain } from "@/components/logo-rain"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background p-4 md:p-8 lg:p-12">
+    <main className="relative min-h-screen bg-background p-4 md:p-8 lg:p-12">
+      <LogoRain />
       <div className="mx-auto max-w-6xl">
         {/* Bento Grid */}
         <div className="grid auto-rows-[minmax(200px,auto)] gap-4 md:grid-cols-2 lg:grid-cols-3">
