@@ -35,7 +35,9 @@ export function PortfolioCard() {
             <h3 className="font-semibold text-foreground">Portfolio</h3>
           </div>
           <a 
-            href="#" 
+            href="https://behance.net/yourusername"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
           >
             View all
