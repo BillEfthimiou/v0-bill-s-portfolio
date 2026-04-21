@@ -8,6 +8,13 @@ const positions = [
     current: true,
     href: "https://arifity.com",
   },
+  {
+    role: "Junior Designer",
+    company: "Judah's Customs",
+    period: "2026 - Present",
+    current: true,
+    href: "https://discord.gg/cnkCPv3f",
+  },
 ]
 
 export function PositionsCard() {
