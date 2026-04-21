@@ -5,22 +5,19 @@ const projects = [
     name: "Project Alpha",
     description: "A modern web application built with Next.js",
     tech: ["Next.js", "TypeScript", "Tailwind"],
-    href: "#",
-    image: "/api/placeholder/400/300",
+    href: "https://example.com/project-alpha",
   },
   {
     name: "Project Beta",
     description: "Full-stack e-commerce platform",
     tech: ["React", "Node.js", "PostgreSQL"],
-    href: "#",
-    image: "/api/placeholder/400/300",
+    href: "https://example.com/project-beta",
   },
   {
     name: "Project Gamma",
     description: "Real-time collaboration tool",
     tech: ["Vue.js", "Socket.io", "Redis"],
-    href: "#",
-    image: "/api/placeholder/400/300",
+    href: "https://example.com/project-gamma",
   },
 ]
 
@@ -51,6 +48,8 @@ export function PortfolioCard() {
             <a
               key={project.name}
               href={project.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group/project flex items-start gap-3 rounded-xl bg-zinc-800/50 p-3 transition-colors hover:bg-zinc-800"
             >
               <div className="h-12 w-12 flex-shrink-0 rounded-lg bg-gradient-to-br from-zinc-700 to-zinc-800" />
