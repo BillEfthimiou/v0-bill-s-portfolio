@@ -19,22 +19,22 @@ function XIcon({ className }: { className?: string }) {
 const socials = [
   {
     name: "Discord",
-    handle: "@yourusername",
-    href: "https://discord.com/users/youruserid",
+    handle: "@billefthimiou",
+    href: "https://discord.com/users/billefthimiou",
     icon: DiscordIcon,
     color: "bg-indigo-500/20 text-indigo-400 hover:bg-indigo-500/30",
   },
   {
     name: "X",
-    handle: "@yourusername",
-    href: "https://x.com/yourusername",
+    handle: "@Bill_Efthimiou",
+    href: "https://x.com/Bill_Efthimiou",
     icon: XIcon,
     color: "bg-zinc-500/20 text-zinc-300 hover:bg-zinc-500/30",
   },
   {
     name: "LinkedIn",
-    handle: "Bill",
-    href: "https://linkedin.com/in/yourusername",
+    handle: "billefthimiou",
+    href: "https://www.linkedin.com/in/bill-efthimiou-a5079a378/",
     icon: Linkedin,
     color: "bg-blue-500/20 text-blue-400 hover:bg-blue-500/30",
   },

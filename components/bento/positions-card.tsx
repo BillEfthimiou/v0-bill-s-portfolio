@@ -29,13 +29,13 @@ export function PositionsCard() {
               key={index}
               className="relative flex gap-4 py-3"
             >
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center pt-1.5">
                 <div className={`h-2.5 w-2.5 rounded-full ${position.current ? 'bg-blue-400' : 'bg-zinc-600'}`} />
                 {index !== positions.length - 1 && (
                   <div className="mt-1 h-full w-px bg-zinc-700" />
                 )}
               </div>
-              <div className="flex-1 -mt-0.5">
+              <div className="flex-1">
                 <p className="text-sm font-medium text-foreground">{position.role}</p>
                 {position.href ? (
                   <a 
