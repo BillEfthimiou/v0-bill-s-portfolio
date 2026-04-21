@@ -123,16 +123,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-@keyframes fall {
-  0% {
-    transform: translateY(-100px) rotate(0deg);
-  }
-  100% {
-    transform: translateY(calc(100vh + 100px)) rotate(15deg);
-  }
-}
-
-.animate-fall {
-  animation: fall linear infinite;
-}
