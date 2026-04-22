@@ -45,7 +45,6 @@ export default function Home() {
         {/* Footer */}
         <footer className="mt-8 text-center">
           <p className="text-sm text-zinc-500">
-            Built with Next.js & Tailwind CSS
           </p>
         </footer>
       </div>
