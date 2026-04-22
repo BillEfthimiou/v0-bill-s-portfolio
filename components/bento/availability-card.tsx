@@ -1,4 +1,4 @@
-import { Briefcase, Clock, MapPin } from "lucide-react"
+import { Briefcase, Palette, Sparkles } from "lucide-react"
 
 export function AvailabilityCard() {
   return (
@@ -24,18 +24,18 @@ export function AvailabilityCard() {
 
         <div className="space-y-3">
           <div className="flex items-center gap-3 rounded-xl bg-zinc-800/50 p-3">
-            <Clock className="h-4 w-4 text-muted-foreground" />
+            <Palette className="h-4 w-4 text-muted-foreground" />
             <div>
-              <p className="text-sm font-medium text-foreground">Full-time & Freelance</p>
-              <p className="text-xs text-muted-foreground">Open to both opportunities</p>
+              <p className="text-sm font-medium text-foreground">Graphic Design</p>
+              <p className="text-xs text-muted-foreground">Visual design & creative work</p>
             </div>
           </div>
           
           <div className="flex items-center gap-3 rounded-xl bg-zinc-800/50 p-3">
-            <MapPin className="h-4 w-4 text-muted-foreground" />
+            <Sparkles className="h-4 w-4 text-muted-foreground" />
             <div>
-              <p className="text-sm font-medium text-foreground">Remote / Hybrid</p>
-              <p className="text-xs text-muted-foreground">Based in Your City</p>
+              <p className="text-sm font-medium text-foreground">Brand Identities</p>
+              <p className="text-xs text-muted-foreground">Logos, colors & typography</p>
             </div>
           </div>
         </div>
