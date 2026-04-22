@@ -3,25 +3,25 @@ import { ExternalLink, Palette, PenTool, Image, Sparkles } from "lucide-react"
 const categories = [
   {
     name: "Logos",
-    count: 12,
+    count: 0,
     icon: PenTool,
     color: "bg-amber-500/20 text-amber-400",
   },
   {
-    name: "Social Media",
-    count: 25,
+    name: "Liveries",
+    count: 0,
     icon: Image,
     color: "bg-pink-500/20 text-pink-400",
   },
   {
-    name: "Thumbnails",
-    count: 18,
+    name: "Banners",
+    count: 0,
     icon: Sparkles,
     color: "bg-cyan-500/20 text-cyan-400",
   },
   {
     name: "Brand Kits",
-    count: 6,
+    count: 0,
     icon: Palette,
     color: "bg-emerald-500/20 text-emerald-400",
   },
