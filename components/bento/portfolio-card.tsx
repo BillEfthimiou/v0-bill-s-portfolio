@@ -1,23 +1,29 @@
-import { ExternalLink, Folder } from "lucide-react"
+import { ExternalLink, Palette, PenTool, Image, Sparkles } from "lucide-react"
 
-const projects = [
+const categories = [
   {
-    name: "Project Alpha",
-    description: "A modern web application built with Next.js",
-    tech: ["Next.js", "TypeScript", "Tailwind"],
-    href: "https://example.com/project-alpha",
+    name: "Logos",
+    count: 12,
+    icon: PenTool,
+    color: "bg-amber-500/20 text-amber-400",
   },
   {
-    name: "Project Beta",
-    description: "Full-stack e-commerce platform",
-    tech: ["React", "Node.js", "PostgreSQL"],
-    href: "https://example.com/project-beta",
+    name: "Social Media",
+    count: 25,
+    icon: Image,
+    color: "bg-pink-500/20 text-pink-400",
   },
   {
-    name: "Project Gamma",
-    description: "Real-time collaboration tool",
-    tech: ["Vue.js", "Socket.io", "Redis"],
-    href: "https://example.com/project-gamma",
+    name: "Thumbnails",
+    count: 18,
+    icon: Sparkles,
+    color: "bg-cyan-500/20 text-cyan-400",
+  },
+  {
+    name: "Brand Kits",
+    count: 6,
+    icon: Palette,
+    color: "bg-emerald-500/20 text-emerald-400",
   },
 ]
 
@@ -30,9 +36,9 @@ export function PortfolioCard() {
         <div className="mb-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/20">
-              <Folder className="h-5 w-5 text-amber-400" />
+              <Palette className="h-5 w-5 text-amber-400" />
             </div>
-            <h3 className="font-semibold text-foreground">Portfolio</h3>
+            <h3 className="font-semibold text-foreground">My Work</h3>
           </div>
           <a 
             href="https://behance.net/yourusername"
@@ -45,36 +51,27 @@ export function PortfolioCard() {
           </a>
         </div>
 
-        <div className="grid gap-3">
-          {projects.map((project) => (
-            <a
-              key={project.name}
-              href={project.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group/project flex items-start gap-3 rounded-xl bg-zinc-800/50 p-3 transition-colors hover:bg-zinc-800"
-            >
-              <div className="h-12 w-12 flex-shrink-0 rounded-lg bg-gradient-to-br from-zinc-700 to-zinc-800" />
-              <div className="min-w-0 flex-1">
-                <p className="text-sm font-medium text-foreground group-hover/project:text-amber-400 transition-colors">
-                  {project.name}
-                </p>
-                <p className="text-xs text-muted-foreground line-clamp-1">
-                  {project.description}
-                </p>
-                <div className="mt-1.5 flex flex-wrap gap-1">
-                  {project.tech.map((t) => (
-                    <span 
-                      key={t}
-                      className="rounded-full bg-zinc-700/50 px-2 py-0.5 text-[10px] text-zinc-400"
-                    >
-                      {t}
-                    </span>
-                  ))}
+        <div className="grid grid-cols-2 gap-3">
+          {categories.map((category) => {
+            const Icon = category.icon
+            return (
+              <a
+                key={category.name}
+                href="https://behance.net/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group/cat flex flex-col items-center justify-center gap-2 rounded-xl bg-zinc-800/50 p-4 transition-all hover:bg-zinc-800 hover:scale-[1.02]"
+              >
+                <div className={`flex h-10 w-10 items-center justify-center rounded-xl ${category.color.split(' ')[0]}`}>
+                  <Icon className={`h-5 w-5 ${category.color.split(' ')[1]}`} />
                 </div>
-              </div>
-            </a>
-          ))}
+                <div className="text-center">
+                  <p className="text-sm font-medium text-foreground">{category.name}</p>
+                  <p className="text-xs text-muted-foreground">{category.count}+ designs</p>
+                </div>
+              </a>
+            )
+          })}
         </div>
       </div>
     </div>
