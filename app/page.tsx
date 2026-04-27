@@ -7,8 +7,8 @@ import { PortfolioCard } from "@/components/bento/portfolio-card"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background flex items-start justify-center p-4 md:p-8 lg:p-12">
-      <div className="w-full max-w-5xl">
+    <main className="min-h-screen bg-background p-4 md:p-8 lg:p-12">
+      <div className="mx-auto max-w-6xl">
         {/* Bento Grid */}
         <div className="grid auto-rows-[minmax(200px,auto)] gap-4 md:grid-cols-2 lg:grid-cols-3">
           {/* Intro - Large spanning card */}
@@ -44,7 +44,9 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="mt-8 text-center">
-          <p className="text-sm text-zinc-500"></p>
+          <p className="text-sm text-zinc-500">
+            Built with Next.js & Tailwind CSS
+          </p>
         </footer>
       </div>
     </main>
