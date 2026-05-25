@@ -26,7 +26,7 @@ export function IntroCard() {
         </div>
 
         <div className="mt-6 flex flex-wrap gap-2">
-          {["Photoshop", "Illustrator", "Figma", "After Effects", "Branding"].map((skill) => (
+          {["Canva", "Illustrator", "Figma", "After Effects", "Branding"].map((skill) => (
             <span 
               key={skill}
               className="rounded-full border border-zinc-700 bg-zinc-800/50 px-3 py-1 text-xs text-zinc-300"
